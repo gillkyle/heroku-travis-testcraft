@@ -5,15 +5,15 @@
   "dependencies": {
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "tc-cli": "^1.0.28"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "heroku-prebuild":
-      "echo %%% This runs before Heroku installs your dependencies. %%%",
+    "heroku-prebuild": "echo %%% This runs before Heroku installs your dependencies. %%%",
     "heroku-postbuild": "echo %%% This runs afterwards. %%%"
   }
 }
