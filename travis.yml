@@ -1,0 +1,16 @@
+jobs:
+    include:
+        - stage: build and test
+          language: node_js
+          node_js:
+            - '6'
+            - '8'
+          cache:
+            yarn: true
+          before_install:
+          - curl -o- -L https://yarnpkg.com/install.sh | bash
+          - export PATH=$HOME/.yarn/bin:$PATH
+          install:
+          - yarn
+          script:
+          - yarn test
