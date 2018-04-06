@@ -14,3 +14,8 @@ jobs:
           - yarn
           script:
           - yarn test
+
+deploy:
+  provider: heroku
+  api_key: c7550b33-816e-4e97-8b90-7c555bf3033d
+  run: "echo %%% heroku deployed and release %%%"
