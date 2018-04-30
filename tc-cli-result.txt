@@ -1,0 +1,8 @@
+info: Testcraft CLI [1.0.31]
+......
+.[32minfo[39m: Result:
+reportTestSuiteStart: Heroku Build Fail
+reportTestStart: New spec - broken - New spec - New spec data']
+reportTestFinishFailure:New spec - broken - New spec - New spec data' message='{\"message\":\"Expected \'https://test-beynd-web-client.herokuapp.com/app/projects\' to equal \'https://test-beynd-web-client.herokuapp.com/app/projects_failing_intentionally\'.\",\"metaData\":{\"componentInstanceId\":\"1923474\",\"testId\":\"1933423\",\"testdataId\":\"1933424\",\"uuid\":\"6b158041-dff4-4243-9d78-b28f6ccf17aa-1933423\",\"usecaseId\":\"1933422\",\"versionId\":\"1923473\",\"flowElementId\":\"6b158041-dff4-4243-9d78-b28f6ccf17aa\",\"actionName\":\"checkURL\",\"scriptOffset\":1,\"stepOffset\":6}}']
+reportTestSuiteFinish: Heroku Build Fail
+[32minfo[39m: Done
