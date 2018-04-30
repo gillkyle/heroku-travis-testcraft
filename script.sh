@@ -4,9 +4,11 @@
 
 node_modules/.bin/tc-cli run -u user@ravndev.com -t 728D36A01A874D4F874D18490CA78865 -s "Heroku Build Fail" -e Testing -p Beynd > tc-cli-result.txt
 
-runResults="$(tail -3 tc-cli-result.txt | head -1 | cut -d " " -f 2)"
-echo "${runResults::-1}"
-runResults="${runResults::-1}"
+runResults=`cat tc-cli-result.txt`
+
+# runResults="$(tail -3 tc-cli-result.txt | head -1 | cut -d " " -f 2)"
+# echo "${runResults::-1}"
+# runResults="${runResults::-1}"
 if [[ $runResults =~ "reportTestFinishFailure" ]]; then
 	cat tc-cli-result.txt
 	echo "1, the tests failed"
